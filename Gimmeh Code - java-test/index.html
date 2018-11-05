@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gruppe 6 code</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<img src="assets/Placeholder.png" alt="banner" id="banner_img">
+	<a href="index.html"><img src="assets/Placeholder.png" alt="logo" id="logo_frontsite"></a>
+
+	<div id="sideNavigation" class="sidenav">
+		<a href="#" onclick="closeNav()"> <img src="assets/pil.png" alt="pil" class="pil_img pilHoejre"></a>
+		<a href="#">Menu Punkt 1</a>
+		<a href="#">Menu Punkt 2</a>
+		<a href="#">Menu Punkt 3</a>
+
+	</div>
+
+	<nav class="topnav">
+		<a href="#" onclick="openNav()">
+   <img src="assets/pil.png" alt="pil" class="pil_img" class="pilVenstre">
+  </a>
+	</nav>
+
+
+	<div id="main">
+		<div id="sort_button">
+
+			<a href="#" onclick="visModal()">	<img src="assets/Placeholder.png" alt="sorterings knap"></a>
+		</div>
+		<div id="modal_vindue">
+			<div id="menuVindue">
+				<div class="modal_knap">
+					<img src="assets/Placeholder.png" alt="sorterings knap1">
+				</div>
+				<div class="modal_knap">
+					<img src="assets/Placeholder.png" alt="sorterings knap2">
+				</div>
+				<div class="modal_knap">
+					<img src="assets/Placeholder.png" alt="sorterings knap3">
+				</div>
+			</div>
+
+		</div>
+		<div id="indholdsArea">
+			<!--Templaten skal være her	-->
+			<section class="container" data-container></section>
+			<template data-template>
+            <article class="postListview">
+
+                <h2 data-title></h2>
+                <p data-text></p>
+                <p data-pris></p>
+                <img data-img>
+                <p data-dato></p>
+                <p data-tid></p>
+                <p data-sted></p>
+                <p data-genre></p>
+
+            </article>
+        </template>
+		</div>
+	</div>
+	<div id="nyhedsbrev">
+		<img src="assets/Placeholder.png" alt="" id="nyhedsbrevImg">
+	</div>
+	<div id="footer">
+		<div id="footerTxt">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem corporis,</p>
+
+		</div>
+		<div id="footerLogo">
+			<div class="footerLogo_logo"><img src="assets/Placeholder.png" alt="logo1" class="sponsor"></div>
+			<div class="footerLogo_logo"><img src="assets/Placeholder.png" alt="logo1" class="sponsor"></div>
+			<div class="footerLogo_logo"><img src="assets/Placeholder.png" alt="logo1" class="sponsor"></div>
+
+		</div>
+
+	</div>
+
+
+	<script src="javascript.js"></script>
+</body>
+
+</html>
